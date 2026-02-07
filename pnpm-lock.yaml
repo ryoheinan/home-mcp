@@ -24,9 +24,9 @@ importers:
       '@biomejs/biome':
         specifier: 2.3.14
         version: 2.3.14
-      '@cloudflare/workers-types':
-        specifier: ^4.20260207.0
-        version: 4.20260207.0
+      '@tsconfig/recommended':
+        specifier: ^1.0.13
+        version: 1.0.13
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -648,6 +648,9 @@ packages:
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
+  '@tsconfig/recommended@1.0.13':
+    resolution: {integrity: sha512-sySRuBfMKyKO/j2ZAhR8kSembhjuPEV4Ra3AHtmWLq51+iGaudr45crPSzNC5b7/Ctrh9dfUpBuTlYrH6rM58Q==}
 
   '@types/chai@5.2.3':
     resolution: {integrity: sha512-Mw558oeA9fFbv65/y4mHtXDs9bPnFMZAL/jxdPFUpOHHIXX91mcgEHbS5Lahr+pwZFR8A7GQleRWeI6cGFC2UA==}
@@ -1363,7 +1366,8 @@ snapshots:
   '@cloudflare/workerd-windows-64@1.20260205.0':
     optional: true
 
-  '@cloudflare/workers-types@4.20260207.0': {}
+  '@cloudflare/workers-types@4.20260207.0':
+    optional: true
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
@@ -1683,6 +1687,8 @@ snapshots:
   '@speed-highlight/core@1.2.14': {}
 
   '@standard-schema/spec@1.1.0': {}
+
+  '@tsconfig/recommended@1.0.13': {}
 
   '@types/chai@5.2.3':
     dependencies:
