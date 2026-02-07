@@ -144,4 +144,5 @@ dist
 # pnpm
 .pnpm-store/
 
-# End of https://www.toptal.com/developers/gitignore/api/node
+# Cloudflare Workers
+.dev.vars
