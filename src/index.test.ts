@@ -7,15 +7,10 @@ vi.mock("hono/adapter", () => {
 });
 
 describe("worker routes", () => {
-	it("returns service metadata on /", async () => {
+	it("returns 404 on /", async () => {
 		const response = await app.request("http://localhost/");
 
-		expect(response.status).toBe(200);
-		await expect(response.json()).resolves.toEqual({
-			name: "nature-remo-mcp",
-			protocol: "mcp",
-			endpoint: "/mcp",
-		});
+		expect(response.status).toBe(404);
 	});
 
 	it("returns ok on /health", async () => {
