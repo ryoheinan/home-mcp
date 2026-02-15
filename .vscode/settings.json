@@ -1,3 +1,11 @@
 {
-	"cSpell.words": ["remo"]
+	"cSpell.words": ["remo"],
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "biomejs.biome",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.biome": "explicit"
+	},
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"typescript.preferences.importModuleSpecifierEnding": "minimal",
+	"typescript.referencesCodeLens.enabled": true
 }
