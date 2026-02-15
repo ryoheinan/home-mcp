@@ -146,3 +146,4 @@ dist
 
 # Cloudflare Workers
 .dev.vars
+.wrangler/
