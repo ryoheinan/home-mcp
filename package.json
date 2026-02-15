@@ -6,8 +6,9 @@
 	"scripts": {
 		"dev": "wrangler dev",
 		"deploy": "wrangler deploy",
-		"typegen": "pnpm run gen:cf-types",
+		"typegen": "pnpm run gen:cf-types && pnpm run gen:nature-remo-types",
 		"gen:cf-types": "wrangler types --env-interface CloudflareBindings",
+		"gen:nature-remo-types": "openapi-typescript https://swagger.nature.global/swagger.json -o src/types/generated/nature-remo-openapi.ts",
 		"test": "vitest run",
 		"test:watch": "vitest --watch",
 		"typecheck": "tsc --noEmit",
@@ -18,11 +19,13 @@
 		"@hono/mcp": "^0.2.3",
 		"@modelcontextprotocol/sdk": "^1.26.0",
 		"hono": "^4.11.8",
+		"openapi-fetch": "^0.15.0",
 		"zod": "^4.3.6"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.3.14",
 		"@tsconfig/recommended": "^1.0.13",
+		"openapi-typescript": "^7.10.1",
 		"typescript": "^5.9.3",
 		"vitest": "^4.0.14",
 		"wrangler": "^4.63.0"
