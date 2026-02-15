@@ -34,6 +34,7 @@
 - Write all code comments (including JSDoc and inline comments) in English.
 - Exception: error classes are allowed and should be isolated in `src/errors/`.
 - Use repository-relative paths in docs/instructions; avoid user-specific absolute paths.
+- No backward-compat shims or fallback paths unless they come free without adding cyclomatic complexity.
 
 ## Additional references
 
