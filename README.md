@@ -83,7 +83,7 @@ Example:
 {
   "mcpServers": {
     "nature-remo": {
-      "type": "streamable-http",
+      "type": "http",
       "url": "https://your-worker-domain/mcp",
       "headers": {
         "Authorization": "Bearer your_mcp_bearer_token"
