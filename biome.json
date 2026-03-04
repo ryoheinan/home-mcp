@@ -6,7 +6,13 @@
 		"useIgnoreFile": true
 	},
 	"files": {
-		"includes": ["**", "!src/types/generated", "!worker-configuration.d.ts"]
+		"includes": [
+			"**",
+			"!src/types/generated",
+			"!.agents",
+			"!skills-lock.json",
+			"!worker-configuration.d.ts"
+		]
 	},
 	"formatter": {
 		"enabled": true
